@@ -23,7 +23,7 @@ arrDesc = [
   'The practise and principle of using actions to benefit others, expecting nothign in return.'
 ]
 
-currIdx = 1
+currIdx = 0
 
 domready ->
   $main = $tag('main')[0]
