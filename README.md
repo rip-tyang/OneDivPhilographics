@@ -8,3 +8,5 @@ I am going to replicate this project by using only one div for each graph.
 Still work in progress.
 
 See live project at http://hacker-yhj.github.io/OneDivPhilographics/
+
+Use Left and Right Arrow to switch between. 
