@@ -24,7 +24,6 @@ html, body
 
 main
   position: absolute
-  width: 100px
   margin: 0
   top: 50%
   left: 50%
@@ -39,7 +38,7 @@ main
   position: absolute
   top: 7.89%
   left: 10%
-  font-size: 4.8vmin
+  font-size: 4.8vh
   transition: all .4s ease-out
 
 #desc
@@ -47,9 +46,9 @@ main
   position: absolute
   top: 13.63%
   left: 10%
-  font-size: 1.2vmin
+  font-size: 1.2vh
   max-width: 80%
-  line-height: 1.5vmin
+  line-height: 1.5vh
   transition: all .4s ease-out
 
 #credit
@@ -58,8 +57,8 @@ main
   bottom: 5%
   left: 50%
   transform: translateX(-50%)
-  font-size: 1.2vmin
-  line-height: 1.5vmin
+  font-size: 1.2vh
+  line-height: 1.5vh
   white-space: nowrap
   transition: all .4s ease-out
 
@@ -127,6 +126,50 @@ body[data-philosophy=altruism]
     left: -24%
     top: -24%
     background: linear-gradient(45deg, rgba(255, 255, 255, 0.4) 19%,  transparent 19%, transparent 81%, rgba(255, 255, 255, 0.4) 81%)
+
+  a:hover
+    color: white
+
+body[data-philosophy=absurdism]
+  background-color: #2F356F
+  &::before
+    background-color: rgba(255, 255, 255, 0.2)
+  main
+    background-color: #2F356F
+  #title
+    color: white
+  #desc
+    color: #AAA
+  #credit
+    color: #AAA
+  #elem
+    position: absolute
+    background: linear-gradient(90deg, transparent 44.262%, #57D492 44.262%)
+    width: 64.21%
+    padding-bottom: 64.21%
+    border-radius: 50%
+    margin: 0
+    top: 48%
+    left: 50%
+    transform: translate(-52.737%, -50%)
+    box-shadow: 1.6rem 35.8rem 0 -17.3rem #57D492
+  #elem::before
+    content: ''
+    position: absolute
+    border-radius: 50%
+    background: linear-gradient(90deg, #1C1F4C 41%, #1D6A69 41%)
+    width: 64.263%
+    height: 64.263%
+    left: 17.8685%
+    top: 17.8685%
+  #elem::after
+    content: ''
+    position: absolute
+    width: 18.03%
+    height: 13.606%
+    left: 44.2%
+    top: 98%
+    background-color: #57D492
 
   a:hover
     color: white

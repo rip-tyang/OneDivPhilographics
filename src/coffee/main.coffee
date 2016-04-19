@@ -10,6 +10,7 @@ ratio = 1.413684211
 
 arrPhilosophy = [
   'absolutism'
+  'absurdism'
   'altruism'
 ]
 
@@ -18,10 +19,11 @@ arrTitle = arrPhilosophy.map (e) ->
 
 arrDesc = [
   'The position that within a particular school of thought, all different perspectives are either absolutely true or absolutely false.'
+  'The contention that the attempts of man to find meaning in universe will ultimately fail because no such meaning exists.'
   'The practise and principle of using actions to benefit others, expecting nothign in return.'
 ]
 
-currIdx = 0
+currIdx = 1
 
 domready ->
   $main = $tag('main')[0]
@@ -39,9 +41,11 @@ onResize = ->
   if window.innerHeight / window.innerWidth > ratio
     $main.style.height = "#{window.innerWidth * ratio * 0.95}px"
     $main.style.width = "#{window.innerWidth * 0.95}px"
+    document.documentElement.style.fontSize = "#{0.95*ratio}vw"
   else
     $main.style.height = "#{window.innerHeight * 0.95}px"
     $main.style.width = "#{window.innerHeight / ratio * 0.95}px"
+    document.documentElement.style.fontSize = '0.95vh'
 
 nextP = ->
   currIdx = (currIdx+1)%arrPhilosophy.length
