@@ -1,20 +1,33 @@
-# OneDivPhilographics
-This project shows my respect to the [Philographics](http://studiocarreras.com/philographics/).
+# One Div Philographics
 
-> Philographics is a series of posters that explain big ideas in simple shapes. They are the result of combining the world of philosophy with graphic design. You can get the entire set of 95 designs as a [book](http://www.amazon.com/Philographics-Big-Ideas-Simple-Shapes/dp/9063693419) or a selection of them as [posters](https://society6.com/gex6) and [postcards](http://www.amazon.com/Philographics-Postcard-Book-Genis-Carreras/dp/9063693893).
+See live project at http://thomas-yang.me/one-div-philographics/
 
-I am going to replicate this project by using only one div for each graph.
+This project replicate the [Philographics](http://studiocarreras.com/philographics/) to show my great respect and admiration to it.
 
 Still work in progress.
 
-See live project at http://hacker-yhj.github.io/OneDivPhilographics/
+# What is Philographics?
 
-Use Left and Right Arrow to switch between.
+> Philographics is a series of posters that explain big ideas in simple shapes. They are the result of combining the world of philosophy with graphic design. You can get the entire set of 95 designs as a [book](http://www.amazon.com/Philographics-Big-Ideas-Simple-Shapes/dp/9063693419) or a selection of them as [posters](https://society6.com/gex6) and [postcards](http://www.amazon.com/Philographics-Postcard-Book-Genis-Carreras/dp/9063693893).
 
----
+# Why one div?
+
+Less is more.
+
+This project displays complicated philosophy concepts using simple shapes and colors.
+So similarly, I am trying to replicate it by using only one div for each graph,
+practicing css skill at the same time.
+
+# How to play around
+
+Use Left and Right Arrow to navigate.
 
 # Progress 3/48
 
 1. Absolutism - 2016-04-19
 2. Absurdism - 2016-04-19
 4. Altruism - 2016-04-19
+
+# License
+
+MIT

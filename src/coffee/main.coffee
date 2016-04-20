@@ -6,7 +6,12 @@ $tag = document.getElementsByTagName.bind document
 $main = null
 $title = null
 $desc = null
+$popout = null
+$black = null
 ratio = 1.413684211
+
+delay = (time, func) ->
+  setTimeout func, time
 
 arrPhilosophy = [
   'absolutism'
@@ -29,6 +34,8 @@ domready ->
   $main = $tag('main')[0]
   $title = $id('title')
   $desc = $id('desc')
+  $black = $id('black')
+  $popout = $id('popout')
   window.addEventListener 'resize', onResize
   window.addEventListener 'keydown', (e) ->
     switch e.keyCode
@@ -36,6 +43,9 @@ domready ->
       when 37 then prevP()
   update()
   onResize()
+  delay 500, showPopout
+  delay 2500, hidePopout
+
 
 onResize = ->
   if window.innerHeight / window.innerWidth > ratio
@@ -59,3 +69,11 @@ update = ->
   $title.innerHTML = arrTitle[currIdx]
   $desc.innerHTML = arrDesc[currIdx]
   document.body.dataset.philosophy = arrPhilosophy[currIdx]
+
+showPopout = ->
+  $black.style.opacity = 1
+  $popout.style.opacity = 1
+
+hidePopout = ->
+  $black.style.opacity = 0
+  $popout.style.opacity = 0

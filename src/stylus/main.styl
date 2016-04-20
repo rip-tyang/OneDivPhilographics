@@ -20,7 +20,35 @@ html, body
     position: absolute
     width: 100%
     height: 100%
-  transition: all .4s ease-out
+  transition: background-color .4s ease-out
+
+#black
+  position: absolute
+  height: 100%
+  width: 100%
+  background-color: rgba(0, 0, 0, 0.2)
+  transition: opacity .4s ease-out
+  will-change: opacity
+  opacity: 0
+
+#popout
+  position: absolute
+  width: 40%
+  left: 50%
+  padding-bottom: 8rem
+  top: 50%
+  background-color: white
+  font-family: Harabara
+  transform: translate(-50%, -50%)
+  text-align: center
+  font-size: 2rem
+  transition: opacity .4s ease-out
+  will-change: opacity
+  opacity: 0
+
+  svg
+    height: 20rem
+    width: 20rem
 
 main
   position: absolute
@@ -28,10 +56,11 @@ main
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
-  transition: all .4s ease-out
+  transition: height .4s ease-out, width .4s ease-out, background-color .4s ease-out
 
 #elem
   transition: all .4s ease-out
+  will-change: transform
 
 #title
   font-family: Harabara
@@ -39,7 +68,7 @@ main
   top: 7.89%
   left: 10%
   font-size: 4.8vh
-  transition: all .4s ease-out
+  transition: color .4s ease-out
 
 #desc
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
@@ -49,7 +78,7 @@ main
   font-size: 1.2vh
   max-width: 80%
   line-height: 1.5vh
-  transition: all .4s ease-out
+  transition: color .4s ease-out
 
 #credit
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
@@ -60,7 +89,7 @@ main
   font-size: 1.2vh
   line-height: 1.5vh
   white-space: nowrap
-  transition: all .4s ease-out
+  transition: color .4s ease-out
 
 body[data-philosophy=absolutism]
   background-color: white
