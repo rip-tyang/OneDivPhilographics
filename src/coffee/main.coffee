@@ -9,9 +9,39 @@ $desc = null
 $popout = null
 $black = null
 ratio = 1.413684211
+xDown = null
+yDown = null
 
 delay = (time, func) ->
   setTimeout func, time
+
+
+handleTouchStart = (evt) ->
+  xDown = evt.touches[0].clientX
+  yDown = evt.touches[0].clientY
+
+handleTouchMove = (evt) ->
+  return if !xDown || !yDown
+
+  xUp = evt.touches[0].clientX
+  yUp = evt.touches[0].clientY
+
+  xDiff = xDown - xUp
+  yDiff = yDown - yUp
+
+  if (Math.abs(xDiff) > Math.abs(yDiff))
+    if xDiff > 0
+      prevP()
+    else
+      nextP()
+  else
+    if yDiff > 0
+        # up swipe
+    else
+        # down swipe
+  # reset
+  xDown = null
+  yDown = null
 
 arrPhilosophy = [
   'absolutism'
@@ -30,7 +60,7 @@ arrDesc = [
   'The assertion that no belief can be said to have absolute truth, having value only within a certain context or frame of reference.'
 ]
 
-currIdx = 3
+currIdx = 0
 
 domready ->
   $main = $tag('main')[0]
@@ -38,6 +68,8 @@ domready ->
   $desc = $id('desc')
   $black = $id('black')
   $popout = $id('popout')
+  window.addEventListener 'touchstart', handleTouchStart, false
+  window.addEventListener 'touchmove', handleTouchMove, false
   window.addEventListener 'resize', onResize
   window.addEventListener 'keydown', (e) ->
     switch e.keyCode
