@@ -27,6 +27,7 @@ Use Left and Right Arrow to navigate.
 1. Absolutism - 2016-04-19
 2. Absurdism - 2016-04-19
 4. Altruism - 2016-04-19
+5. Relativism - 2016-04-21
 
 # License
 

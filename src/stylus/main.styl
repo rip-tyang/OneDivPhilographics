@@ -9,6 +9,7 @@ a,
 a:visited,
 a:active,
 a:link
+  z-index: 999
   text-decoration: none
   color: inherit
 
@@ -66,23 +67,29 @@ main
   font-family: Harabara
   position: absolute
   top: 7.89%
-  left: 10%
+  left: 9%
   font-size: 4.8vh
   transition: color .4s ease-out
 
 #desc
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
   position: absolute
+  font-weight: 300
+  letter-spacing: .05rem
+  color: rgba(255, 255, 255, 0.5)
   top: 13.63%
-  left: 10%
+  left: 9%
   font-size: 1.2vh
-  max-width: 80%
+  max-width: 74.5%
   line-height: 1.5vh
   transition: color .4s ease-out
 
 #credit
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
   position: absolute
+  font-weight: 300
+  letter-spacing: .05rem
+  color: rgba(255, 255, 255, 0.5)
   bottom: 5%
   left: 50%
   transform: translateX(-50%)
@@ -125,10 +132,6 @@ body[data-philosophy=altruism]
     background-color: #65B7FF
   #title
     color: white
-  #desc
-    color: #EEE
-  #credit
-    color: #EEE
   #elem
     position: absolute
     background-color: white
@@ -167,10 +170,6 @@ body[data-philosophy=absurdism]
     background-color: #2F356F
   #title
     color: white
-  #desc
-    color: #AAA
-  #credit
-    color: #AAA
   #elem
     position: absolute
     background: linear-gradient(90deg, transparent 44.262%, #57D492 44.262%)
@@ -180,7 +179,7 @@ body[data-philosophy=absurdism]
     margin: 0
     top: 48%
     left: 50%
-    transform: translate(-52.737%, -50%)
+    transform: translate(-50%, -50%)
     box-shadow: 1.6rem 35.8rem 0 -17.3rem #57D492
   #elem::before
     content: ''
@@ -199,6 +198,39 @@ body[data-philosophy=absurdism]
     left: 44.2%
     top: 98%
     background-color: #57D492
+
+  a:hover
+    color: white
+
+body[data-philosophy=relativism]
+  background-color: #BDBEC0
+  &::before
+    background-color: rgba(255, 255, 255, 0.2)
+  main
+    background-color: #BDBEC0
+  #title
+    color: white
+  #desc
+    color: rgba(255, 255, 255, 0.7)
+  #credit
+    color: rgba(255, 255, 255, 0.7)
+  #elem
+    position: absolute
+    background-color: transparent
+    width: 30.105%
+    padding-bottom: 30.105%
+    border-radius: 50%
+    margin: 0
+    top: 23%
+    left: 50%
+    transform: translate(-50%, -50%)
+    box-shadow: 0 31rem 0 0 rgba(0, 0, 0, 0.25),
+                5rem 31rem 0 0 rgba(0, 0, 0, 0.25),
+                10rem 31rem 0 0 rgba(0, 0, 0, 0.25),
+                15rem 31rem 0 0 rgba(0, 0, 0, 0.25),
+                -5rem 31rem 0 0 rgba(0, 0, 0, 0.25),
+                -10rem 31rem 0 0 rgba(0, 0, 0, 0.25),
+                -15rem 31rem 0 0 rgba(0, 0, 0, 0.25)
 
   a:hover
     color: white

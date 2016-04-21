@@ -17,6 +17,7 @@ arrPhilosophy = [
   'absolutism'
   'absurdism'
   'altruism'
+  'relativism'
 ]
 
 arrTitle = arrPhilosophy.map (e) ->
@@ -26,9 +27,10 @@ arrDesc = [
   'The position that within a particular school of thought, all different perspectives are either absolutely true or absolutely false.'
   'The contention that the attempts of man to find meaning in universe will ultimately fail because no such meaning exists.'
   'The practise and principle of using actions to benefit others, expecting nothign in return.'
+  'The assertion that no belief can be said to have absolute truth, having value only within a certain context or frame of reference.'
 ]
 
-currIdx = 0
+currIdx = 3
 
 domready ->
   $main = $tag('main')[0]
@@ -77,3 +79,6 @@ showPopout = ->
 hidePopout = ->
   $black.style.opacity = 0
   $popout.style.opacity = 0
+  delay 500, ->
+    $black.style.display = 'none'
+    $popout.style.display = 'none'
