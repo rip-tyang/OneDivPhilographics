@@ -1,6 +1,6 @@
 # One Div Philographics
 
-See live project at http://thomas-yang.me/one-div-philographics/
+See live project at http://thomas-yang.me/projects/one-div-philographics/
 
 This project replicate the [Philographics](http://studiocarreras.com/philographics/) to show my great respect and admiration to it.
 
