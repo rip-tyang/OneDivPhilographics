@@ -48,6 +48,7 @@ arrPhilosophy = [
   'absurdism'
   'altruism'
   'relativism'
+  'historicism'
 ]
 
 arrTitle = arrPhilosophy.map (e) ->
@@ -58,9 +59,10 @@ arrDesc = [
   'The contention that the attempts of man to find meaning in universe will ultimately fail because no such meaning exists.'
   'The practise and principle of using actions to benefit others, expecting nothign in return.'
   'The assertion that no belief can be said to have absolute truth, having value only within a certain context or frame of reference.'
+  'The theory that to understand a historical event, you must understand the philosophical context that it took place in, rather than explain it with supposedly timeless or fundamental ideas.'
 ]
 
-currIdx = 0
+currIdx = 4
 
 domready ->
   $main = $tag('main')[0]

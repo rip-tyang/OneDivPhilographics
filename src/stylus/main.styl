@@ -234,3 +234,37 @@ body[data-philosophy=relativism]
 
   a:hover
     color: white
+
+body[data-philosophy=historicism]
+  background-color: #D56A24
+  &::before
+    background-color: rgba(255, 255, 255, 0.2)
+  main
+    background-color: #D56A24
+  #title
+    color: white
+  #desc
+    color: #222
+    max-width: 80%
+  #credit
+    color: #222
+  #elem
+    position: absolute
+    background-color: #883809
+    width: 8.5%
+    padding-bottom: 24.1%
+    top: 55.8%
+    left: 14%
+    transform: translate(-50%, -50%)
+    box-shadow: 20.5rem 0 0 0 #883809,
+                41rem 0 0 0 #883809
+  #elem::after
+    content: ''
+    position: absolute
+    width: 915%
+    height: 37%
+    top: 31.5%
+    left: 0
+    background-color: rgba(0, 0, 0, .75)
+  a:hover
+    color: black
