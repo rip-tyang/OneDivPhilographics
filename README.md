@@ -30,6 +30,7 @@ Use Left and Right Arrow to navigate.
 5. Relativism - 2016-04-21
 6. Historicism - 2016-04-22
 8. Anarchism - 2016-04-27
+10. Eclecticism - 2016-04-28
 
 # License
 

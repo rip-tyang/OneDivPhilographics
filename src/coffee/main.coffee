@@ -50,6 +50,7 @@ arrPhilosophy = [
   'relativism'
   'historicism'
   'anarchism'
+  'eclecticism'
 ]
 
 arrTitle = arrPhilosophy.map (e) ->
@@ -62,9 +63,10 @@ arrDesc = [
   'The assertion that no belief can be said to have absolute truth, having value only within a certain context or frame of reference.'
   'The theory that to understand a historical event, you must understand the philosophical context that it took place in, rather than explain it with supposedly timeless or fundamental ideas.'
   'A range of views that oppose the idea of the state as a means of governance, instead advocating a society based on a non-hierachical relationships.'
+  'A conceptual approach that does not stick to a single paradigm or set of assumptions, but instead draws upon multiple theories or styles to gain a more varied or balanced insignt into something.'
 ]
 
-currIdx = 5
+currIdx = 0
 
 domready ->
   $main = $tag('main')[0]
