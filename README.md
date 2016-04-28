@@ -22,13 +22,14 @@ practicing css skill at the same time.
 
 Use Left and Right Arrow to navigate.
 
-# Progress 3/48
+# Progress 6/48
 
 1. Absolutism - 2016-04-19
 2. Absurdism - 2016-04-19
 4. Altruism - 2016-04-19
 5. Relativism - 2016-04-21
 6. Historicism - 2016-04-22
+8. Anarchism - 2016-04-27
 
 # License
 

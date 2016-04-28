@@ -269,3 +269,30 @@ body[data-philosophy=historicism]
     background-color: rgba(0, 0, 0, .75)
   a:hover
     color: black
+
+body[data-philosophy=anarchism]
+  background-color: #3E3C41
+  &::before
+    background-color: rgba(255, 255, 255, 0.2)
+  main
+    background-color: #3E3C41
+  #title
+    color: white
+  #desc
+    color: #F05867
+    max-width: 80%
+  #credit
+    color: #F05867
+  #elem
+    position: absolute
+    background-color: transparent
+    width: 56%
+    border-right: 9.5rem solid transparent
+    border-left: 9.5rem solid transparent
+    border-bottom: 15.6rem solid #F05867
+    top: 63.4%
+    left: 50%
+    transform: translateX(-50%)
+
+  a:hover
+    color: white

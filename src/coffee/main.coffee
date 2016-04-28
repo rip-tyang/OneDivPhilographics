@@ -49,6 +49,7 @@ arrPhilosophy = [
   'altruism'
   'relativism'
   'historicism'
+  'anarchism'
 ]
 
 arrTitle = arrPhilosophy.map (e) ->
@@ -60,9 +61,10 @@ arrDesc = [
   'The practise and principle of using actions to benefit others, expecting nothign in return.'
   'The assertion that no belief can be said to have absolute truth, having value only within a certain context or frame of reference.'
   'The theory that to understand a historical event, you must understand the philosophical context that it took place in, rather than explain it with supposedly timeless or fundamental ideas.'
+  'A range of views that oppose the idea of the state as a means of governance, instead advocating a society based on a non-hierachical relationships.'
 ]
 
-currIdx = 4
+currIdx = 5
 
 domready ->
   $main = $tag('main')[0]
